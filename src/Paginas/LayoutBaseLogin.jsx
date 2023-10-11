@@ -10,7 +10,7 @@ import { IconeTwitter } from "../Componentes/Icones/IconeTwitter"
 import { Card } from "../Componentes/Card/Card"
 import { Links } from "../Componentes/Link/Links"
 
-const LayoutBase = () => {
+const LayoutBaseLogin = () => {
     return (
         <>
             <Cabecalho>
@@ -20,9 +20,9 @@ const LayoutBase = () => {
                             <div>BOMAE</div>
                         </Col>
                         <Col align="right">
-                            <Link to='/login' style={{ textDecoration: 'none' }}>
+                            <Link to='/' style={{ textDecoration: 'none' }}>
                                 <Links variante="secundaria">
-                            Login
+                            Fazer Cadastro
                                 </Links>
                             </Link>
                         </Col>
@@ -76,4 +76,4 @@ const LayoutBase = () => {
     )
 }
 
-export default LayoutBase
+export default LayoutBaseLogin

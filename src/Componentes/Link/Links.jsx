@@ -16,13 +16,13 @@ const LinkSecundario = styled.a`
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: ${props => props.theme.cores.primarias.b};
+    color: ${props => props.theme.cores.branco};
     &:hover {
         font-weight: bold;
         border-bottom: 1px solid ${props => props.theme.cores.primarias.b};
     }
 `
-export const Link = ({ children, variante = 'primario' }) => {
+export const Links = ({ children, variante = 'primario' }) => {
     if (variante === 'primario') {
         return <LinkPrimario variante={variante}>
             {children}
